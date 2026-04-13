@@ -1,4 +1,5 @@
-﻿using System;
+//Final Submission Luyakha Ntshobane (ST10485641)
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Media;
