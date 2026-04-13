@@ -1,0 +1,71 @@
+﻿<Window x:Class="CyberSecurityChatbot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cyberbot v2.0 - Security Awareness" Height="550" Width="450"
+        WindowStartupLocation="CenterScreen" Background="#1E1E1E">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="ChatDisplay"
+                 Grid.Row="0"
+                 IsReadOnly="True"
+                 VerticalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"
+                 FontFamily="Consolas"
+                 FontSize="13"
+                 Padding="10"
+                 Background="#000000" 
+                 Foreground="#00FF00"
+                 BorderBrush="#333333"
+                 Margin="0,0,0,10"/>
+
+        <TextBox x:Name="UserInput"
+                 Grid.Row="1"
+                 Height="40"
+                 FontSize="14"
+                 VerticalContentAlignment="Center"
+                 Padding="8,0"
+                 Background="#2D2D2D"
+                 Foreground="White"
+                 CaretBrush="White"
+                 BorderBrush="#007ACC"
+                 Margin="0,0,0,10"/>
+
+        <Button Content="SEND MESSAGE"
+                Grid.Row="2"
+                Height="45"
+                FontSize="14"
+                FontWeight="Bold"
+                Background="#007ACC"
+                Foreground="White"
+                Click="SendButton_Click"
+                Margin="0,0,0,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="CLEAR SESSION"
+                Grid.Row="3"
+                Height="35"
+                FontSize="12"
+                Background="#3E3E42"
+                Foreground="#CCCCCC"
+                Click="ClearButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>
